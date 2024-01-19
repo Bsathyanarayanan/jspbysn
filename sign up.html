@@ -1,0 +1,146 @@
+<html>
+<head>
+
+<link rel="icon" type="image/x-icon" href="F:\00JS_project\00_img\l.jpg"class="img-responsive">
+            <title>
+             Mens Fashion
+            </title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-s<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+			<link rel="stylesheet"  href="F:\00JS_project\02_css\sign\sign up.css">
+			
+			
+			
+        </head>
+        
+<body>
+	    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <center>
+	                                <p> 
+		                              <img src="F:\00JS_project\00_img\l.jpg"> <span id="a1">MENS</span>    <span id="a2">FASHION</span>
+		                            </p>
+                                </center>
+                            </div>		  
+                        </div>		  
+                    </div>
+               <!----Navbar---->
+                       <nav class="navbar navbar-inverse navbar-fixed ">
+                            <div class="container-fluid">
+                                <div class="navbar-header">
+			                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar" >
+			                                  <span class="icon-bar"></span>
+			                                  <span class="icon-bar"></span>
+			                                  <span class="icon-bar"></span>
+		                            </button>
+									<a class="navbar-brand" href="#"><span id="a3">MENS</span> FASHION</a>
+                                </div>
+                                <ul class="nav navbar-nav">
+                                    <li ><a href="F:\00JS_project\01_html\00_fashion_home.html">HOME</a></li>
+                                    <li><a href="F:\00JS_project\01_html\01_Clothing.html">CLOTHING</a></li>
+                                    <li><a href="F:\00JS_project\01_html\01_Clothing.html">CLOTHING</a></li>
+                                    <li><a href="F:\00JS_project\01_html\02_Accessories.html">ACCESSORIES</a></li>
+			                        <li><a href="F:\00JS_project\01_html\03_Contant.html">CONTANT US</a></li></ul>
+	                            </ul>
+	                            <form class="navbar-form navbar-left " action="/action_page.php">
+                                <div class="form-group">
+					                     <input type="text" id="e" class="form-control" placeholder="Mens Fashion" name="search" >
+						                <ul class="nav navbar-nav navbar-right">
+                                            <li class="active"><a href="F:\00JS_project\01_html\sign up.html"><span class="glyphicon glyphicon-user"></span>SIGN IN</a></li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </nav>
+
+ <script>
+	 function verification()
+	 {
+	     var email=document.aa.email.value;
+         
+         if(email.match(/^([a-zA-Z0-9]+)@([a-zA-Z]+)([\.]+)([a-z]{2,5})$/))
+             {
+			     return true;
+             }
+         else
+			     alert("please enter valid email");
+            {
+			     return false;   
+			 }		 
+	 }
+	 
+	  function match()
+	  {
+	 
+	  var fpassword=document.aa.password.value;
+	  var spassword=document.aa.password2.value;
+	  
+	     if(fpassword==spassword)
+             {
+			     if(fpassword.length>6 && spassword.length>6 )
+				  {
+			        return true;
+				  }
+				 else
+				  {
+				     alert("password must atlest contain 6 letter !");
+					 return false;
+				 
+				  }
+             }
+         else
+             {
+			     alert("passwors must be same!!");
+			     return false;   
+			 }		 
+	  
+	  }
+	  
+	 </script>
+	 
+	 <header>
+	 
+     <div class="box">
+
+	     <form name="aa" action="" onsubmit="return verification(), match()">
+		 
+		     <h2 id="a">SIGN IN</h2>
+			 <div class="inputBox">
+			<center><span id="v">USERNAME</span><br>	
+			<input id="d" type="text"  required="required"> </center>
+			 </div>
+			 <br>
+			 <br>
+			 
+			 <div class="inputBox">
+			<center><span id="v">EMAIL</span><br>	
+			<input id="d"  type="text" name="email" required="required"> </center>
+			 </div>
+			 <br>
+			 <br>
+			 
+			 <div class="inputBox">
+			<center><span id="v">PASSWORD</span><br>	
+			<input id="d"  type="password" name="password"  required="required"> </center>
+			 </div>
+			 <br>
+			 <br>
+			 
+			 <div class="inputBox">
+			<center><span id="v"> CONFORM PASSWORD</span><br>	
+			<input id="d"  type="password" name="password2"  required="required"> </center>
+			 </div>
+			 <br>
+			 <br>
+			 
+	       <center><input id="fd" type="submit" value="LOGIN">
+			<input id="fd" type="reset" value="RESET"></center>
+         </form>	 	 
+	 </div>
+</header>
+</body>
+</html>
